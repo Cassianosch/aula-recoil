@@ -30,8 +30,8 @@ const AppRoutes = () => (
 export const Router = () => {
     return (
         <BrowserRouter>
-            <AppRoutes />
-            {/* <AuthRoutes /> */}
+            {/* <AppRoutes /> */}
+            <AuthRoutes />
         </BrowserRouter>
     );
 };

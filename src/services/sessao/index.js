@@ -29,7 +29,7 @@ const _pegarUsuario = async (token) => {
   }
 };
 
-export const sessionServices = {
+export const sessionServices = () => ({
   _login,
   _pegarUsuario,
-};
+});

@@ -7,7 +7,7 @@ export const UsuarioPage = () => {
       <h3>Usuario: {`Cssss`}</h3>
       <a href="/home">Voltar para home</a>
       <br />
-      <a>Sair</a>
+      {/* <a>Sair</a> */}
     </>
   )
 }
