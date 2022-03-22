@@ -1,4 +1,5 @@
 import React, { useCallback } from "react";
+import { Link } from "react-router-dom";
 import { sessionServices } from "../../../services/sessao";
 import useSession from "../../../hooks/useSession";
 
@@ -30,7 +31,7 @@ export const LoginPage = () => {
           Acessar
         </button>
       </form>
-      <a href="/cadastro">Cadastrar</a>
+      <Link to="/cadastro">Cadastrar</Link>
     </>
   );
 };
