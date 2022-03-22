@@ -17,9 +17,12 @@ const _login = async (dados) => {
 const _pegarUsuario = async (token) => {
   try {
     const data = {
-      id: 1,
-      username: "Cassiano Scheidemantel",
-      email: "cassiano@scheidemantel.com.br",
+      jwt: "81370fad0ij9-ni0f39-1D3D1-J9#B8028hd180",
+      user: {
+        id: 1,
+        username: "Cassiano Scheidemantel",
+        email: "cassiano@scheidemantel.com.br",
+      },
     };
     return data;
   } catch (err) {

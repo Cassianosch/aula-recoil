@@ -7,7 +7,7 @@ export default () => {
 
   const handleSignin = useCallback((data) => {
     console.log("handleSignin", data);
-    localStorage.setItem("aulaRecoil.token", data.token);
+    localStorage.setItem("aulaRecoil.token", data.jwt);
   }, []);
 
   const handleSignout = useCallback(() => {
