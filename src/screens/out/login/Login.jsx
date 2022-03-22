@@ -4,15 +4,18 @@ import { sessionServices } from "../../../services/sessao";
 export const LoginPage = () => {
   const { _login } = sessionServices();
 
-  const handleLogin = useCallback(async (e) => {
-    try {
-      const sessionData = await _login({
-        username: "teste",
-        password: "teste",
-      });
-    } catch (error) {}
-    e.preventDefault();
-  }, []);
+  const handleLogin = useCallback(
+    async (e) => {
+      try {
+        const sessionData = await _login({
+          username: "teste",
+          password: "teste",
+        });
+      } catch (error) {}
+      e.preventDefault();
+    },
+    [_login]
+  );
 
   return (
     <>
