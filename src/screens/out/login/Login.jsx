@@ -1,8 +1,10 @@
 import React, { useCallback } from "react";
 import { sessionServices } from "../../../services/sessao";
+import useSession from "../../../hooks/useSession";
 
 export const LoginPage = () => {
   const { _login } = sessionServices();
+  const { handleSignin } = useSession();
 
   const handleLogin = useCallback(
     async (e) => {
@@ -11,6 +13,7 @@ export const LoginPage = () => {
           username: "teste",
           password: "teste",
         });
+        handleSignin(sessionData);
       } catch (error) {}
       e.preventDefault();
     },

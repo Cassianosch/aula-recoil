@@ -1,12 +1,12 @@
 /* eslint-disable import/no-anonymous-default-export */
 import { useCallback } from "react";
 import { sessionServices } from "../services/sessao";
-import { SetterOrUpdater, useRecoilState } from "recoil";
 
 export default () => {
   const { _pegarUsuario } = sessionServices();
 
   const handleSignin = useCallback((data) => {
+    console.log("handleSignin", data);
     localStorage.setItem("aulaRecoil.token", data.token);
   }, []);
 
